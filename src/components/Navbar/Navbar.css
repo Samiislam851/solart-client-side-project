@@ -1,0 +1,9 @@
+.floating-bg {
+    background: linear-gradient(270deg, #07074D 30.29%, rgba(16, 16, 108, 0.51) 99.9%, rgba(18, 18, 40, 0.00) 99.91%);
+}
+
+.custom-bg-for-linear-grad {
+    background: linear-gradient(91deg, #333333 1.36%, rgba(155, 155, 255, 0.00) 75.45%);
+
+
+}
