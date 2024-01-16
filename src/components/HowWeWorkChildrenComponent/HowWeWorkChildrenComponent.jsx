@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HowWeWorkChildrenComponent = ({ data, i }) => {
-    console.log(data);
+
     return (
         <div className='p-5'>
             <div className='flex flex-col gap-2 items-center justify-center text-center z-[100]'>
