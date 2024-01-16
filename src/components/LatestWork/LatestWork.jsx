@@ -2,7 +2,6 @@ import React from 'react';
 import './LatestWork.css'
 
 const LatestWork = ({ data, i }) => {
-    console.log(data, i);
     //return according to conditional i 
     if (i % 2 == 0) {
         return (

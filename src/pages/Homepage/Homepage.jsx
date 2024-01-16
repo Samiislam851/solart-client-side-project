@@ -2,6 +2,8 @@ import React from 'react';
 import OurServices from '../../components/OurServices/OurServices';
 import AboutOurCompany from '../../components/AboutOurCompany/AboutOurCompany';
 import OurWork from '../../components/OurWork/OurWork';
+import HowWeWork from '../../components/HowWeWork/HowWeWork';
+import MeetOurTeem from '../../components/MeetOurTeem/MeetOurTeem';
 
 const Homepage = () => {
     return (
@@ -10,6 +12,11 @@ const Homepage = () => {
             <OurServices />
             <AboutOurCompany/>
             <OurWork/>
+
+
+            <HowWeWork/>
+
+            <MeetOurTeem/>
         </div>
     );
 }

@@ -69,13 +69,21 @@ const OurWork = () => {
 
 
             </div>
+
+
+            {/* bottom show case */}
+
+
+
             <div className='px-5 md:px-16   max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 -gap-10 mt-5'>
                 {works.map((work, i) => <LatestWork key={i} data={work} i={i + 1}></LatestWork>)}
 
             </div>
 
+            <div className='flex justify-center pt-10 pb-10 md:pb-20'>
+                <button onClick={() => console.log('load more button clicked')} className='mx-auto w-fit border'><PrimaryButton>Load More</PrimaryButton></button>
 
-            <button><PrimaryButton>Load More</PrimaryButton></button>
+            </div>
 
         </div>
     );
