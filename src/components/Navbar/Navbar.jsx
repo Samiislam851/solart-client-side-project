@@ -24,7 +24,7 @@ const Navbar = () => {
         <>
             <div style={{ backgroundImage: `url('./../../../public/assets/images/banner-header.jpeg')` }} className='relative bg-transparent bg-cover md:bg-cover bg-center bg-no-repeat'>
 
-                <div className=''>
+                <div className='custom-bg-for-linear-grad '>
 
 
 

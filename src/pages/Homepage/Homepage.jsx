@@ -1,14 +1,15 @@
 import React from 'react';
+import OurServices from '../../components/OurServices/OurServices';
+import AboutOurCompany from '../../components/AboutOurCompany/AboutOurCompany';
+import OurWork from '../../components/OurWork/OurWork';
 
 const Homepage = () => {
     return (
-        <div>
-            This is homepage
-
-            <button
-  className="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
-  Button
-</button>
+        <div className='overflow-custom-hidden            '>
+      
+            <OurServices />
+            <AboutOurCompany/>
+            <OurWork/>
         </div>
     );
 }

@@ -5,6 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+.overflow-custom-hidden{
+  overflow: hidden !important;
+}
+
 .appear-animation {
   animation: slide-in 1.5s ease-out;
   transition: all 1s ease-in;
