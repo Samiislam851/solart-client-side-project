@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css'
 import Banner from '../Banner/Banner';
+import CallAnytime from '../CallAnytime/CallAnytime';
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     useEffect(() => {
@@ -40,35 +41,70 @@ const Navbar = () => {
 
                         </div>
 
-                        <div className="navbar-center hidden lg:flex">
-
+                        <div className="navbar-center hidden lg:flex me-0 md:me-12">
+                            {/* On large */}
                             <ul className="menu menu-horizontal px-1">
-                                <li><a>Item 1</a></li>
                                 <li>
-                                    <details>
-                                        <summary>Parent</summary>
-                                        <ul className="p-2">
+                                    <details className="" >
+                                        <summary className='parent'>Home</summary>
+                                        <ul className="p-2 bg-gray-900 opacity-70 rounded-none text-white">
+                                            <li><a>Submenu 1</a></li>
+                                            <li><a>Submenu 2</a></li>
+                                        </ul>
+                                    </details>
+                                </li>    <li>
+                                    <details className="" >
+                                        <summary className='parent'>Service</summary>
+                                        <ul className="p-2  bg-gray-900 opacity-70 rounded-none text-white ">
+                                            <li><a>Submenu 1</a></li>
+                                            <li><a>Submenu 2</a></li>
+                                        </ul>
+                                    </details>
+                                </li>    <li>
+                                    <details className="" >
+                                        <summary className='parent'>Project</summary>
+                                        <ul className="p-2  bg-gray-900 opacity-70 rounded-none text-white">
                                             <li><a>Submenu 1</a></li>
                                             <li><a>Submenu 2</a></li>
                                         </ul>
                                     </details>
                                 </li>
-                                <li><a>Item 3</a></li>
+                                <li>
+                                    <details className="" >
+                                        <summary className='parent'>Pages</summary>
+                                        <ul className="p-2  bg-gray-900 opacity-70 rounded-none text-white ">
+                                            <li><a>Submenu 1</a></li>
+                                            <li><a>Submenu 2</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details className="" >
+                                        <summary className='parent'>News</summary>
+                                        <ul className="p-2  bg-gray-900 opacity-70 rounded-none text-white">
+                                            <li><a>Submenu 1</a></li>
+                                            <li><a>Submenu 2</a></li>
+                                        </ul>
+                                    </details>
+
+                                </li>
+                                <li><a>Contact</a></li>
                             </ul>
                             <div className='sm:hidden md:block'>
-                                Call Us
+                                <CallAnytime />
                             </div>
                         </div>
-                        <div className="navbar-end">
-                            <div className='md:hidden'>
-                                Call Us
+
+                        <div className="md:hidden navbar-end">
+                            <div className='md:hidden '>
+                                <CallAnytime />
                             </div>
                             <div className="dropdown relative">
                                 <div tabIndex={0} onClick={() => { setOpen(!open) }} role="" className="btn btn-ghost lg:hidden">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                        <path d="M3.57031 12H21.5703" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M3.57031 6H21.5703" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M3.57031 18H21.5703" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3.57031 12H21.5703" stroke="white" strokwidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M3.57031 6H21.5703" stroke="white" strokwidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M3.57031 18H21.5703" stroke="white" strokwidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </div>
 
@@ -77,18 +113,62 @@ const Navbar = () => {
 
                     </div>
 
-                    {/* Drop down  */}
+
+
+
+         {/*..................... Drop down on small devices...................  */}
+        
+        
+        
+        
                     <ul tabIndex={0} id='hiddenNav' className={`text-white w-[100vw] z-0 floating-bg p-4 pt-20  md:hidden absolute top-[0%] translate-y-[-600px] transition-all duration-[1s] delay-0 ease-in-out text-right`}
                     >
-                        <li><a>Item 1</a></li>
+
                         <li>
-                            <a>Parent</a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
+                            <details className="" >
+                                <summary className='parent'>Home</summary>
+                                <ul className="p-2 ">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>    <li>
+                            <details className="" >
+                                <summary className='parent'>Service</summary>
+                                <ul className="p-2 ">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>    <li>
+                            <details className="" >
+                                <summary className='parent'>Project</summary>
+                                <ul className="p-2 ">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li>
+                            <details className="" >
+                                <summary className='parent'>Pages</summary>
+                                <ul className="p-2 ">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details className="" >
+                                <summary className='parent'>News</summary>
+                                <ul className="p-2 ">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+
+                        </li>
+                        <li><a>Contact</a></li>
                     </ul>
 
 
