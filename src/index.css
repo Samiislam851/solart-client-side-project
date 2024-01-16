@@ -5,3 +5,83 @@
 @tailwind components;
 @tailwind utilities;
 
+.appear-animation {
+  animation: slide-in 1.5s ease-out;
+  transition: all 1s ease-in;
+}
+
+.appear-animation1 {
+  animation: slide-up 1s ease-out;
+  transition: all 1.5s ease-in;
+}
+.appear-animation1-2 {
+  animation: slide-up 1.3s ease-out;
+  transition: all 2s ease-in;
+}
+
+.appear-animation2 {
+  animation: slide-in2 1.5s ease-out;
+  /* transition: all 1s ease-in; */
+}
+
+
+@keyframes slide-in {
+  0% {
+      opacity: 0;
+      transform: translateX(-200px);
+  }
+
+  50% {
+      opacity: 0;
+      /* transform: translateX(-200px) ; */
+  }
+
+  70% {
+      opacity: .2;
+  }
+
+  100% {
+      opacity: 1;
+      padding-left: 0px;
+      transform: translateX(0px);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+      opacity: 0;
+      transform: translateY(200px);
+  }
+
+  30% {
+      opacity: 0;
+      /* transform: translateX(-200px) ; */
+  }
+  100% {
+      opacity: 1;
+      padding-left: 0px;
+      transform: translateY(0px);
+  }
+}
+
+@keyframes slide-in2 {
+  0% {
+      opacity: 0;
+      transform: translateX(300px);
+  }
+
+  50% {
+      opacity: .1;
+      /* transform: translateX(-200px) ; */
+  }
+
+  70% {
+      /* opacity: ; */
+  }
+
+  100% {
+      opacity: 1;
+      padding-left: 0px;
+      transform: translateX(0px);
+  }
+}
