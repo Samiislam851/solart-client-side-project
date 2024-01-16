@@ -97,3 +97,6 @@
 .gradient1-bg {
   background: linear-gradient(90deg, #232358 0%, rgba(217, 217, 217, 0.00) 65.97%);
 }
+.my-color{
+  color: var(--Secondary-ash-gray, #D5D2DA);
+}

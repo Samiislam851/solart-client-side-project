@@ -29,7 +29,7 @@ const MeetOurTeem = () => {
 
     return (
         <div className='px-5 md:px-16 py-20 md:py-32  max-w-[1600px] mx-auto'>
-            <div className='basis-[70%] md:basis-1/2 bottom-10   px-5 md:px-16   max-w-[1600px] mx-auto'>
+            <div className='basis-[70%] md:basis-1/2 bottom-10  '>
                 <div className='flex gap-2'>
                     <img src="./assets/images/icons/two-bars.svg" className='w-[60px]' alt="" />
                     <h3 className='text-xl md:text-3xl my-2 font-semibold z-10'>Meet Out Team</h3>
