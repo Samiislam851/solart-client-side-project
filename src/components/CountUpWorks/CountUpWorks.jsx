@@ -13,7 +13,7 @@ const CountUpWorks = () => {
         setScrollPercent(scrollbarPercentage)
         return scrollbarPercentage
     }
-    console.log('yo---', scrollPercent);
+    // console.log('yo---', scrollPercent);
 
     /// 85 is the mark
 

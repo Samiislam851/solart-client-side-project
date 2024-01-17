@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiFacebook, FiLinkedin, FiTwitter } from 'react-icons/fi';
 const TeamMember = ({ data }) => {
-    console.log(data);
+    // console.log(data);
     return (
         <div style={{backgroundImage:`url(${data.image})`}} className="relative h-[200px] bg-cover bg-center  md:h-[400px] border-gray-200   group overflow-hidden">
             <div className='flex gap-3 absolute top-0 md:top-[-10%] group-hover:top-0 transition-all ease-in-out duration-300  group-hover:bg-opacity-50 p-2 '>
