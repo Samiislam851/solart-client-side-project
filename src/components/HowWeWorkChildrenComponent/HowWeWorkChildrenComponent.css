@@ -1,0 +1,7 @@
+.stroked-text1 {
+
+    font-weight: bold;
+    color: transparent; /* Text color */
+    -webkit-text-stroke: 1px #FFFFFF; /* Width and color of the stroke (for WebKit browsers) */
+    text-stroke: 1px #ffffff; /* Fallback for other browsers that support the standard property */
+  }

@@ -10,22 +10,22 @@ const OurWork = () => {
 
     const works = [
         {
-            "image": "../../../public/assets/images/bunglaw-dark-house.jpeg",
+            "image": "./assets/images/bunglaw-dark-house.jpeg",
             "title": "Architecture",
             "subtitle": "Bungalow Dark house"
         },
         {
-            "image": "../../../public/assets/images/woodines-house.jpeg",
+            "image": "./assets/images/woodines-house.jpeg",
             "title": "Interior Design",
             "subtitle": "Subtitle for the example content"
         },
         {
-            "image": "../../../public/assets/images/woodiness-house.jpeg",
+            "image": "./assets/images/woodiness-house.jpeg",
             "title": "Home Decor",
             "subtitle": "Bungalow Dark house"
         },
         {
-            "image": "../../../public/assets/images/bunglawjpeg.jpeg",
+            "image": "./assets/images/bunglawjpeg.jpeg",
             "title": "Urban Design",
             "subtitle": "Subtitle for the example content"
         }

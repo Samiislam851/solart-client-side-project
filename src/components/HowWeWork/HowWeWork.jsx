@@ -7,22 +7,22 @@ const HowWeWork = () => {
 
     const workingProcess = [
         {
-            "image": "../../../public/assets/images/visit-project.png",
+            "image": "./assets/images/visit-project.png",
             "title": "Visit Project",
             "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum earum ipsa sit id excepturi ipsum."
         },
         {
-            "image": "../../../public/assets/images/planningDesign.png",
+            "image": "./assets/images/planningDesign.png",
             "title": "Planning Design",
             "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum earum ipsa sit id excepturi ipsum."
         },
         {
-            "image": "../../../public/assets/images/project-sketch.png",
+            "image": "./assets/images/project-sketch.png",
             "title": "Project Sketch",
             "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum earum ipsa sit id excepturi ipsum."
         },
         {
-            "image": "../../../public/assets/images/startworking.png",
+            "image": "./assets/images/startworking.png",
             "title": "Start Working",
             "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum earum ipsa sit id excepturi ipsum."
         },
@@ -56,8 +56,8 @@ const HowWeWork = () => {
                 </div>
 
 
-                <div className='relative pt-10'>
-                    <div className='grid grid-cols-2 md:grid-cols-4 z-[100]'>
+                <div className='relative pt-16'>
+                    <div className='grid grid-cols-2 gap-y-10 md:grid-cols-4 z-[100]'>
 
                         {workingProcess.map((data, i) => <HowWeWorkChildrenComponent key={i} i={i + 1} data={data}></HowWeWorkChildrenComponent>)}
                     </div>

@@ -32,7 +32,7 @@ const AboutOurCompany = () => {
                     <p className='py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, in suscipit quae ad ipsum officia?</p>
                     <ul className='my-6'>
                         {points.map((point, i) => <li className='flex gap-2 my-3' key={i}>
-                          <img src="../../../public/assets/images/icons/circlePoint.svg" className='w-[20px]' alt="" />  {point}
+                          <img src="./assets/images/icons/circlePoint.svg" className='w-[20px]' alt="" />  {point}
                         </li>)}
                     </ul>
 

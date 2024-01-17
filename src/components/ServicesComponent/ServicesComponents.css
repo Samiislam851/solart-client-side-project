@@ -1,7 +1,9 @@
-.outlined-text {
-    font-size: 1.5rem;
+
+
+  .stroked-text {
+
     font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 2px ; /* Adjust the stroke width and color as needed */
-    display: inline-block;
+    color: #ffffff; /* Text color */
+    -webkit-text-stroke: 2px #B98E75; /* Width and color of the stroke (for WebKit browsers) */
+    text-stroke: 2px #B98E75; /* Fallback for other browsers that support the standard property */
   }

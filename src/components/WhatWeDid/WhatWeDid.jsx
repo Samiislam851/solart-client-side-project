@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const WhatWeDid = () => {
+const [state, setState] = useState('link');
+const imagesLink = [
+    'link',
+    'link',
+    'link',
+]
+
+
+
     return (
         <div className=''>
             <div className='px-5 md:px-16 py-20 md:py-32  max-w-[1600px] mx-auto'>
@@ -15,7 +24,7 @@ const WhatWeDid = () => {
 
             </div>
 
-            <div className='w-full bg-cover bg-center' style={{ backgroundImage: `url('../../../public/assets/images/slider-showcase.jpeg')` }}>
+            <div className='w-full bg-cover bg-center' style={{ backgroundImage: `url('./assets/images/slider-showcase.jpeg')` }}>
 
                 <div className=' gradient1-bg text-white h-fit  py-32 px-5 md:px-16  max-w-[1600px] mx-auto
              

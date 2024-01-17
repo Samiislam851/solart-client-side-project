@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div style={{ backgroundImage: `url('./../../../public/assets/images/banner-header.jpeg')` }} className='relative bg-transparent bg-cover md:bg-cover bg-center bg-no-repeat'>
+            <div style={{ backgroundImage: `url('./assets/images/banner-header.jpeg')` }} className='relative bg-transparent bg-cover md:bg-cover bg-center bg-no-repeat'>
 
                 <div className='custom-bg-for-linear-grad '>
 

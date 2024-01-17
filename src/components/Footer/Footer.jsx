@@ -3,6 +3,14 @@ import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from 'react-icons/fi';
 
 const Footer = () => {
 
+    function scrollToTop() {
+        // Scroll to the top of the page smoothly
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      }
+
     const iconStyle = {
         color: '#ffffff',
     };
@@ -45,7 +53,7 @@ const Footer = () => {
 
                         <ul className='my-2'>
                             {points.map((point, i) => <li className='flex gap-2 my-3' key={i}>
-                                <img src="../../../public/assets/images/icons/circlePoint.svg" className='w-[20px]' alt="" /> <p> {point.title} </p>
+                                <img src="./assets/images/icons/circlePoint.svg" className='w-[20px]' alt="" /> <p> {point.title} </p>
                             </li>)}
                         </ul>
 
@@ -143,9 +151,11 @@ const Footer = () => {
             </div>
 
             <div className='w-full relative border-t mt-10 border-t-gray-700'>
-                <div className='absolute p-1 bg-primaryDonkeyBrown rounded-full left-1/2 -translate-x-[50%] translate-y-[-50%]'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <div onClick={scrollToTop} className='cursor-pointer animate-bounce absolute  top-[-13px] p-2 bg-primaryDonkeyBrown rounded-full left-1/2 -translate-x-[70%] translate-y-[-50%]'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M18 15L12 9L6 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg></div>
+                </svg>
+                
+                </div>
             </div>
             <p className="text-center py-10 text-white">
                 Copyright by SoluArt © 2022. All rights reserved

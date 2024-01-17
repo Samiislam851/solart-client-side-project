@@ -1,0 +1,16 @@
+.stroked-text2 {
+
+    font-weight: bold;
+    color: #D5D2DA; /* Text color */
+    -webkit-text-stroke: 2px #ffff; /* Width and color of the stroke (for WebKit browsers) */
+    text-stroke: 2px #ffff; /* Fallback for other browsers that support the standard property */
+  }
+  .zi-1{
+    z-index: 1;
+  }
+  .zi-2{
+    z-index: 10 !important;
+  }
+  .zi-3{
+    z-index: 50 !important;
+  }
